@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in/home/screens/sign_in.dart';
 import 'package:sign_in/home/widgets/blue_text.dart';
 import 'package:sign_in/home/widgets/grey_text.dart';
 import 'package:sign_in/home/widgets/new_account.dart';
@@ -28,7 +29,7 @@ class Welcome extends StatelessWidget {
           GreyText(txt: "Existing  customer / Get started "),
 
           const SizedBox(height: 10,),
-          SignButton(txt: 'Sign In',),
+          SignButton(txt: 'Sign In', screen: SignIn(),),
 
             const SizedBox(height: 100,),
            NewAccount()

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sign_in/core/theme/app_colors.dart';
+import 'package:sign_in/home/screens/screen.dart';
 import 'package:sign_in/home/widgets/blue_text.dart';
 import 'package:sign_in/home/widgets/email.dart';
 import 'package:sign_in/home/widgets/grey_text.dart';
@@ -70,7 +71,7 @@ class _SignUpState extends State<SignUp> {
             ],),
 
             const SizedBox(height: 20,),
-            SignButton(txt: "Sign Up",)
+            SignButton(txt: "Sign Up", screen: Screen(),)
         ],),
       ),
       )

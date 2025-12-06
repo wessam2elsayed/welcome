@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sign_in/core/theme/app_colors.dart';
 import 'package:sign_in/home/screens/forget_password_screen.dart';
+import 'package:sign_in/home/screens/screen.dart';
 import 'package:sign_in/home/widgets/blue_text.dart';
 import 'package:sign_in/home/widgets/custome_container.dart';
 import 'package:sign_in/home/widgets/email.dart';
@@ -72,7 +73,7 @@ class _SignInState extends State<SignIn> {
                 ],
               ),
               const SizedBox(height: 20,),
-            SignButton(txt: 'Sign In',),
+            SignButton(txt: 'Sign In', screen: Screen(),),
            const SizedBox(height: 80,),
 
            CustomeContainer(img: "assets/googleimage.png",
