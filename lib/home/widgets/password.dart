@@ -16,7 +16,7 @@ class _PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
     return  TextFormField(
-              obscureText: secureText,
+              obscureText: secureText== true?true:false,
               controller: passController,
               decoration: InputDecoration(
                 fillColor: AppColors.hoverColor,
@@ -27,7 +27,7 @@ class _PasswordState extends State<Password> {
                     secureText = !secureText;
                   });
                 },
-                 icon: Icon(secureText?Icons.visibility:Icons.visibility_off_outlined),
+                 icon: Icon(secureText?Icons.visibility_off:Icons.visibility),
                  color: AppColors.blueColor,),
                 
                 border: OutlineInputBorder(
